@@ -1,0 +1,320 @@
+.heroSection {
+  width: 100vw;
+  height: 100vh;
+  /* overflow-y: hidden; */
+}
+
+.main-div {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(77, 77, 77);
+  display: flex;
+  align-items: stretch;
+  margin-top: 100px;
+}
+
+.options {
+  height: 100%;
+  width: 70px;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  background-color: rgb(36, 36, 36);
+}
+
+.codeBox {
+  height: 100%;
+  width: 100px;
+  background-color: rgb(30, 30, 30);
+  flex-grow: 2;
+  border: 1px solid whitesmoke;
+}
+
+.resultbox {
+  height: 100%;
+  width: 100px;
+  background-color: rgb(36, 36, 36);
+  flex-grow: 2;
+  border: 1px solid whitesmoke;
+}
+
+.Header {
+  width: 100%;
+  height: 100px;
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  background-color: rgb(48, 47, 47);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.iconBox {
+  margin-left: 50px;
+}
+
+.iconBox h1 {
+  font-family: sans-serif;
+  color: azure;
+  font-size: 25px;
+}
+
+.iconBox p {
+  font-family: sans-serif;
+  color: azure;
+}
+
+.codeHeader {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  color: azure;
+  font-family: sans-serif;
+  background-color: rgb(36, 36, 36);
+  border-bottom: 1px solid whitesmoke;
+}
+
+.codeHeader.lightTheme {
+  border-bottom: 2px solid black;
+}
+
+.codeHeader.lightTheme {
+  color: black;
+  background-color: #ecf6ff;
+}
+
+.codeHeader button {
+  background-color: blue;
+}
+
+.fileName {
+  flex-grow: 1;
+  width: 200px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.shareIcon {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.themeBtn {
+  height: 33px;
+  width: 33px;
+  border: 2px solid white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 7px;
+  border-radius: 3px;
+  color: azure;
+}
+
+.themeBtn.lightTheme {
+  color: black;
+  border: 2px solid black;
+}
+
+.outputHeader {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(36, 36, 36);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  color: azure;
+  font-family: sans-serif;
+  padding-right: 25px;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.optionBox {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: azure;
+  border-top: 1px solid whitesmoke;
+}
+
+.inputBox {
+  width: 100%;
+  height: 100%;
+  /* overflow-y: scroll; */
+  padding-top: 15px;
+}
+
+.inputBox textarea {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  padding: 1px;
+  font-size: 20px;
+  color: azure;
+}
+
+.outputBox {
+  width: 100%;
+  overflow-y: scroll;
+  padding: 15px;
+}
+
+.outputBox textarea {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  color: azure;
+}
+
+.activeOption {
+  background-color: #0078ff;
+  border-color: #0078ff;
+  transform: scale(1.05);
+}
+
+.Header.lightTheme {
+  background-color: #052b8b;
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.resultbox.lightTheme {
+  background-color: #f0f7ff;
+}
+
+.options.lightTheme {
+  background-color: white;
+  color: black;
+  border: 1px solid #dfefff;
+  border-right: 2px solid black;
+}
+
+.optionBox.lightTheme {
+  border-color: black;
+  color: black;
+}
+
+.shareDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 33px;
+  gap: 5px;
+  border: 2px solid white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin-right: 7px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.shareDiv.lightTheme {
+  color: black;
+  border: 2px solid black;
+}
+
+@media (max-width: 768px) {
+  .Header {
+    width: 100%;
+    height: 60px;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    background-color: rgb(48, 47, 47);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .iconBox {
+    margin-left: 25px;
+  }
+
+  .iconBox h1 {
+    font-family: sans-serif;
+    color: azure;
+    font-size: 15px;
+  }
+
+  .iconBox p {
+    font-family: sans-serif;
+    color: azure;
+  }
+
+  .main-div {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(77, 77, 77);
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .options {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: rgb(36, 36, 36);
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    align-content: flex-start;
+    gap: 15px;
+    padding-left: 15px;
+  }
+
+  .optionBox {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: azure;
+    border-top: 1px solid whitesmoke;
+  }
+
+  .codeBox {
+    height: 200px;
+    width: 100%;
+    background-color: rgb(30, 30, 30);
+    flex-grow: 2;
+    border: 1px solid whitesmoke;
+  }
+
+  .resultbox {
+    height: 200px;
+    width: 100%;
+    background-color: rgb(36, 36, 36);
+    flex-grow: 2;
+    border: 1px solid whitesmoke;
+    z-index: 9999;
+  }
+
+}

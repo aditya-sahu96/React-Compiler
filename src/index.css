@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.lightTheme{
+  background-color: #ecf6ff;
+  color: black;
+  border-color: black;
+
+}
+
+.outputHeader.lightTheme {
+  background-color: #dfefff;
+  color: black;
+  border-bottom: 2px solid black;
+}
+
