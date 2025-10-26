@@ -88,7 +88,7 @@ const MainComponent = () => {
                     },
                 ],
             });
-
+            console.log(response)
             console.log("Response:", response.data);
             setOutput(response.data.run.output || "No output");
         } catch (error) {
@@ -191,7 +191,7 @@ const MainComponent = () => {
                 </div>
 
                 <div className={`outputBox ${theme === "light" ? "lightTheme" : ""}`}>
-                    <textarea type="text" value={output} readOnly />
+                    <textarea type="text" value={output} readOnly className={`outPutText ${theme === "light" ? "lightTheme": ""}`}/>
                 </div>
             </div>
         </div>

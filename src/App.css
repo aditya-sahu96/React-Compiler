@@ -235,6 +235,10 @@
   border: 2px solid black;
 }
 
+.outPutText.lightTheme {
+  color: black;
+}
+
 @media (max-width: 768px) {
   .Header {
     width: 100%;
